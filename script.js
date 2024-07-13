@@ -120,4 +120,14 @@ $(document).ready(function() {
         () => clearInterval(autoSlideInterval),
         () => autoSlideInterval = setInterval(nextSlide, 5000)
     );
+
+    $(document).ready(function() {
+        $('.project-item').click(function() {
+          $('.project-item').removeClass('active');
+          $(this).addClass('active');
+          
+          var newImageSrc = $(this).data('image');
+          $('#projectImage').attr('src', newImageSrc);
+        });
+      });
 });
