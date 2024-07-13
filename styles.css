@@ -242,3 +242,16 @@ h1 {
 .project-item p {
   margin-bottom: 0;
 }
+
+.image-container {
+    width: 100%;
+    height: 400px; /* Adjust this value as needed */
+    overflow: hidden;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
