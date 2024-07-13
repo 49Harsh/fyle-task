@@ -121,13 +121,35 @@ $(document).ready(function() {
         () => autoSlideInterval = setInterval(nextSlide, 5000)
     );
 
+    //   our project section
     $(document).ready(function() {
-        $('.project-item').click(function() {
-          $('.project-item').removeClass('active');
-          $(this).addClass('active');
+        var $projectItems = $('.project-item');
+        var currentIndex = 0;
+      
+        function changeSlide(index) {
+          $projectItems.removeClass('active');
+          var $currentItem = $projectItems.eq(index);
+          $currentItem.addClass('active');
           
-          var newImageSrc = $(this).data('image');
+          var newImageSrc = $currentItem.data('image');
           $('#projectImage').attr('src', newImageSrc);
+        }
+      
+        function autoChangeSlide() {
+          currentIndex = (currentIndex + 1) % $projectItems.length;
+          changeSlide(currentIndex);
+        }
+      
+        // Initial activation
+        changeSlide(currentIndex);
+      
+        // Auto-change every 10 seconds
+        setInterval(autoChangeSlide, 10000);
+      
+        // Click handler
+        $projectItems.click(function() {
+          currentIndex = $projectItems.index(this);
+          changeSlide(currentIndex);
         });
       });
 });
