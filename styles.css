@@ -46,6 +46,11 @@ h1 {
 
 /* slide css  section */
 
+#what-we-do{
+    background-color: #f5f5f5;
+    padding: 15px;
+}
+
 .slider-container {
     position: relative;
     overflow: hidden;
@@ -280,7 +285,7 @@ h1 {
   
   .growth-card:hover {
     transform: scale(1.05);
-    box-shadow: #6c757d;
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
   }
   
   .growth-card img {
@@ -291,9 +296,9 @@ h1 {
   
   .growth-card h3 {
     font-size: 2.5rem;
-    font-weight: bold;
+    
     margin-bottom: 10px;
-    color: #ff6b6b;
+    color: #0c0a0a;
   }
   
   .growth-card p {
@@ -305,4 +310,63 @@ h1 {
     color: #ff6b6b !important;
   }
 
+  .main-growth{
+    width: 100%;
+    background-color: #FAFAFA;
+  }
+
+  /* last section feedback */
+
+  .client-feedback {
+    padding-top: 60px;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
   
+  .client-feedback h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  
+  .testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .quote-img {
+    position: absolute;
+    left: 1%;
+    bottom: 70px;
+    width: 60px;
+    opacity: 0.1;
+  }
+  
+  .client-name {
+    color: #ff6b6b;
+    font-weight: bold;
+  }
+  
+  .client-position {
+    color: #6c757d;
+    font-weight: normal;
+  }
+  
+  .brand-section {
+    background-color: #cb0404;
+    width: 100%;
+    height: 400px;
+   
+  }
+  
+  .brand-section img {
+    width: 100%;
+    padding: 3%;
+    padding-top: 12%;
+    
+  }
+  
+  .text-danger {
+    color: #e33838 !important;
+  }
