@@ -252,7 +252,7 @@ h1 {
   
   .project-image {
     width: 100%;
-    height: 400px;
+    height: 420px;
     object-fit: fill;
     object-position: center;
   }
@@ -261,6 +261,7 @@ h1 {
 
 .company-growth {
     padding: 60px 0;
+    background: #FAFAFA;
   }
   
   .company-growth h2 {
@@ -279,6 +280,7 @@ h1 {
   
   .growth-card:hover {
     transform: scale(1.05);
+    box-shadow: #6c757d;
   }
   
   .growth-card img {
