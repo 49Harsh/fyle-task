@@ -216,6 +216,7 @@ h1 {
  /* project section css */
  .our-project {
   padding: 60px 0;
+  width: 70%;
 }
 
 .our-project h2 {
@@ -254,6 +255,52 @@ h1 {
     height: 400px;
     object-fit: fill;
     object-position: center;
+  }
+
+/* growth section css */
+
+.company-growth {
+    padding: 60px 0;
+  }
+  
+  .company-growth h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .growth-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .growth-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .growth-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .growth-card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ff6b6b;
+  }
+  
+  .growth-card p {
+    margin-bottom: 0;
+    color: #6c757d;
+  }
+  
+  .text-danger {
+    color: #ff6b6b !important;
   }
 
   
